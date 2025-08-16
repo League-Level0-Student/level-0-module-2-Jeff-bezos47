@@ -19,7 +19,7 @@ public class IntroToRandom {
 		// Run this program and you will see that nextInt created 5 random integers which have been printed to the console
 		for (int i=0; i<5; i++) {
 			number = ran.nextInt();
-			System.out.println(number);
+		//	System.out.println(number);
 		}
 		// The range of numbers that an int variable can hold is very large (as you can see in the console).
 		// Integers can also be positive or negative.
@@ -27,10 +27,10 @@ public class IntroToRandom {
 		/*************  Random positive integers with an upper limit only  *************/
 		
 		// Usually we want to limit the numbers to a range in our program. 		
-		for (int i=0; i<5; i++) {
+		for (int i=0; i<20; i++) {
 			// Uncomment the line of code below, but replace the _____ with a positive integer (e.g. 100) before running the program			
 
-			// number = ran.nextInt(_____);
+			 number = ran.nextInt(6);
 			System.out.println(number);
 			
 		}
@@ -44,14 +44,14 @@ public class IntroToRandom {
 		// But what if you don't want the range to start at 0?  Let's say we want numbers between 25 and 75 inclusive.
 		// In this case, 25 is the lowest value we want, and 75 is the highest value. See below how to do this:
 		
-		for (int i=0; i<5; i++) {
+		 for (int i=0; i<5; i++) {
 			// Uncomment the line of code below, and replace (_____)  with   (highest value - lowest value + 1)
-			// For our example, this will be:  ( 75 - 25 + 1 )
+			// For our example, this will be:  ( 75 - 25 + 1 ) 
 			// Also replace <lowest value> with the start of the range.  For our example, this is 25.
 			
-			// number = ran.nextInt(_____) + <lowest value>;
-			System.out.println(number);
-			
+			//number = ran.nextInt(99 - 47 + 1) + 47;
+			//System.out.println(number);
+					//      nextInt( HIGH  -  LOW  + 1 )  + LOW
 		}
 		// This time, all the values printed should be between 25 and 75.
 
@@ -59,7 +59,11 @@ public class IntroToRandom {
 		/*************  Random integers with an upper and lower (negative) limit  *************/
 		
 		// Using the above example, generate 5 random numbers between -222 and 88
-
+for (int i=0; i<5; i++) {
+	
+	number = ran.nextInt(88 - -222 + 1) + -222;
+	//System.out.println(number);
+}
 
 	}
 }
